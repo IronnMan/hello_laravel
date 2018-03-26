@@ -10,9 +10,11 @@
 <body>
     @include('layouts._header')
     <div class="container">
-        <div class="col-md-offset-1 col-md-10">
-            @yield('content')
-    @include('layouts._footer')
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 col-md-auto">
+                @yield('content')
+                @include('layouts._footer')
+            </div>
         </div>
     </div>
 

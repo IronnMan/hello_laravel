@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);/*!
+/** header **/
+
+/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -19824,16 +19826,6 @@ table.table-sm td {
   padding-bottom: 0.6rem;
 }
 
-/* universal */
-
-.jumbotron {
-  text-align: center;
-}
-
-/* typography */
-
-/* header */
-
 /* footer */
 
 footer {
@@ -19873,5 +19865,16 @@ footer img.brand-icon {
 footer .slogon {
   font-size: 13px;
   font-weight: bold;
+}
+
+/** home pages **/
+
+.row {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.jumbotron {
+  text-align: center;
 }
 
