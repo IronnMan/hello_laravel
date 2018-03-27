@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "abstracts/variables";
+
+// Bootstrap
+@import "node_modules/mdbootstrap/css/bootstrap";
+// mdbootstrap
+@import "node_modules/mdbootstrap/scss/mdb";
+
+@import "layout/footer";
+
+@import "pages/home";
