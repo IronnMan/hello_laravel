@@ -19837,6 +19837,7 @@ footer {
 
 footer a {
   color: #555;
+  vertical-align: middle;
 }
 
 footer a:hover {
