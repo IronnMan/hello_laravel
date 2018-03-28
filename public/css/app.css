@@ -19868,6 +19868,32 @@ footer .slogon {
   font-weight: bold;
 }
 
+.testimonial-card .card-up {
+  overflow: hidden;
+  height: 120px;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.testimonial-card .avatar {
+  border-radius: 50%;
+  width: 120px;
+  margin-top: -65px;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+.blue-gradient {
+  background: linear-gradient(40deg, #45cafc, #303f9f) !important;
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+  max-width: 50px;
+  border-radius: 50%;
+}
+
 /** home pages **/
 
 .row {

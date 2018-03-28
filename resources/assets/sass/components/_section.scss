@@ -1,0 +1,29 @@
+
+.testimonial-card {
+    .card-up {
+        overflow: hidden;
+        height: 120px;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+    .avatar {
+        border-radius: 50%;
+        width: 120px;
+        margin-top: -65px;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+}
+
+
+.blue-gradient {
+    background: -webkit-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: linear-gradient(40deg,#45cafc,#303f9f)!important;
+}
+
+.gravatar {
+    float: left;
+    margin-right: 10px;
+    max-width: 50px;
+    border-radius: 50%;
+}

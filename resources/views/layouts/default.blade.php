@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Laravel App') - Laravel 新手入门手册</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/app.css">
 </head>
@@ -13,6 +14,7 @@
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-12 col-md-auto">
+                @include('shared._messages')
                 @yield('content')
                 @include('layouts._footer')
             </div>
