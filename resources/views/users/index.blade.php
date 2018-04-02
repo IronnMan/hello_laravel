@@ -12,7 +12,7 @@
                     <img class="d-flex mb-3 mx-auto gravatar rounded-circle" src="{{ $user->gravatar() }}" alt="{{ $user->name }}">
                     <div class="media-body text-center text-md-left ml-md-3 ml-0">
                         <a href="{{ route('users.show', $user->id) }}">
-                            <h5 class="mt-0 font-weight-bold">{{ $user->name }}
+                            <h5 class="mt-0 font-weight-bold text-left">{{ $user->name }}
 
                                 @can('destroy', $user)
                                 <form action="{{ route('users.destroy', $user->id) }}" method="POST">
