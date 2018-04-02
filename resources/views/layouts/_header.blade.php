@@ -17,7 +17,7 @@
                 <ul class="navbar-nav mr-right">
                     @if (Auth::check())
                     <li class="nav-item">
-                        <a class="nav-link" href="#">用户列表</a>
+                        <a class="nav-link" href="{{ route('users.index') }}">用户列表</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" role="button" aria-haspopup="true" aria-expanded="false">
@@ -28,7 +28,7 @@
                                 <a class="text-left font-weight-normal" href="{{ route('users.show', Auth::user()->id) }}">个人中心</a>
                             </li>
                             <li class="dropdown-item">
-                                <a class="font-weight-normal" href="#">编辑资料</a>
+                                <a class="font-weight-normal" href="{{ route('users.edit', Auth::user()->id) }}">编辑资料</a>
                             </li>
                             <li role="separator" class="dropdown-divider"></li>
                             <li>
@@ -54,11 +54,4 @@
             </div>
         </div>
     </nav>
-    {{--
-    <div class="col-md-offset-1 col-md-10">
-        <nav class="nav navbar-nav navbar-right">
-            <li><a href="{{ route('help') }}">帮助</a></li>
-            <li><a href="#">登录</a></li>
-        </nav>
-    </div> --}}
 </header>

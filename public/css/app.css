@@ -19916,3 +19916,9 @@ footer .slogon {
   text-align: center;
 }
 
+.d-block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
