@@ -15,13 +15,13 @@
 
                 <!-- Default input email -->
                 <label for="email" class="grey-text font-weight-light float-left">邮箱：</label>
-                <input type="email" name="email" class="form-control" value="{{ old('email') }}">
+                <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}">
 
                 <br>
 
                 <!-- Default input password -->
                 <label for="password" class="grey-text font-weight-light float-left">密码：</label>
-                <input type="password" name="password" class="form-control" value="{{ old('password') }}">
+                <input type="password" name="password" id="password" class="form-control" value="{{ old('password') }}">
 
                 <br>
 
@@ -39,8 +39,9 @@
             <!-- Default form subscription -->
 
             <hr>
+            <p class="float-left"><a href="{{ route('password.request') }}">忘记密码？</a></p>
 
-            <p>还没有账号？<a href="{{ route('signup') }}">现在注册！</a></p>
+            <p class="float-right">还没有账号？<a href="{{ route('signup') }}">现在注册！</a></p>
         </div>
         <!-- Card body -->
     </div>

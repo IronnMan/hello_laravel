@@ -19897,7 +19897,7 @@ footer .slogon {
 [type=checkbox] + label,
 [type=radio] + label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 0.5rem;
   cursor: pointer;
   display: inline-block;
   height: 25px;
