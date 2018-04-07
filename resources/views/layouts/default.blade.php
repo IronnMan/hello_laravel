@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title', 'Laravel App') - Laravel 新手入门手册</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/116403/144/5ac90c70f629d90d947c3f1a.css' rel='stylesheet' type='text/css' />
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="/css/app.css">
 </head>

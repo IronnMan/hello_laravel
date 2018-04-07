@@ -4,33 +4,38 @@
 @section('content')
 <div class="row  justify-content-md-center">
 
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12 mb-4">
-        <!--Card-->
-        <div class="card testimonial-card">
 
-            <!--Background color-->
-            <div class="card-up info-color"></div>
 
-            <!--Avatar-->
-            <div class="avatar mx-auto white">
-                <a href="{{ route('users.show', $user->id) }}">
-                    <img src="{{ $user->gravatar('140') }}" class="rounded-circle img-fluid" alt="{{ $user->name }}">
-                </a>
-            </div>
+    <!-- user list -->
+    <div class="col-md-8 mb-4">
+        <div class="card card-comments mb-3 wow fadeIn" style="visibility:visible;animation-name:fadeIn;">
+            <div class="card-header font-weight-bold">我的动态</div>
 
+            @if (count($statuses) > 0)
             <div class="card-body">
-                <!--Name-->
-                <h4 class="mt-1">
-                    <strong>{{ $user->name }}</strong>
-                </h4>
-                <hr>
-                <!--Quotation-->
-                <p class="dark-grey-text">Yeah, I can fly!</p>
+                <div class="statuses">
+                    @foreach ($statuses as $status)
+                        <div class="media d-block d-md-flex mt-3">
+                            @include('statuses._status')
+                        </div>
+                    @endforeach
+                </div>
+
             </div>
+            @endif
 
         </div>
-        <!--Card-->
+
+        <!-- Pagination -->
+        <nav aria-label="pagination example" class="d-flex justify-content-center">
+            {{ $statuses->links('vendor.pagination.default') }}
+        </nav>
+        {{-- {!! $statuses->render() !!} --}}
+    </div>
+
+    <!-- Grid column -->
+    <div class="col-lg-4 col-md-12 mb-4">
+        @include('shared._user_info', ['user' => Auth::user()])
     </div>
 </div>
 @stop
