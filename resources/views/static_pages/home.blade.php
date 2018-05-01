@@ -3,7 +3,7 @@
 @section('content')
 
     @if (Auth::check())
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-md-center" style="padding-top:2rem;">
 
         <div class="col-md-8 mb-4">
             <div class="card mb-3 wow fadeIn" style="visibility:visible;animation-name:fadeIn;">
@@ -21,6 +21,7 @@
 
         <div class="col-lg-4 col-md-12 mb-4">
             @include('shared._user_info', ['user' => Auth::user()])
+
         </div>
     </div>
     @else

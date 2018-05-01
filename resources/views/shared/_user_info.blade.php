@@ -18,7 +18,7 @@
         </h4>
         <hr>
         <!--Quotation-->
-        <p class="dark-grey-text">Yeah, I can fly!</p>
+        @include('shared._stats', ['user' => $user])
     </div>
 
 </div>

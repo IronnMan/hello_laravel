@@ -35,7 +35,13 @@
 
     <!-- Grid column -->
     <div class="col-lg-4 col-md-12 mb-4">
-        @include('shared._user_info', ['user' => Auth::user()])
+        @include('shared._user_info', ['user' => $user])
+
+        <br>
+
+        @if (Auth::check())
+            @include('users._follow_form')
+        @endif
     </div>
 </div>
 @stop
